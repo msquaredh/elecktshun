@@ -1,6 +1,6 @@
-var Elecktshun = artifacts.require("./Elecktshun.sol")
+var Elecktshun = artifacts.require("./Elecktshun.sol");
 contract("Elecktshun", function(accounts){
-    var elecktshunInstance
+    var elecktshunInstance;
     // Test the initial number of candidates is correct
     it("initializes with 2 candidates", function(){
         return Elecktshun.deployed().then(function(instance) {
